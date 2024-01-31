@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Helix.html">Home</a>
+            <a href="Cancer.html">Cancer Definition </a>
+            <a href="Cancer Develop.html">Cancer Development</a>
+            <a href="cancer spreads.html">Spreading of Cancer</a>
+            <a href="Types of cancer.html">Cancer Types</a>
+            <a href="Cancer - Copy (4).html">Cancer Types</a>
+        </div>
+        <img src = "cancer_spreads-removebg-preview.png" alt="cnacer" width="120" height="60" style="position:absolute; top:10px; left:300px;">
+        <img src = "cancer_spreads-removebg-preview.png" alt="cnacer" width="120" height="60" style="position:absolute; top:10px; right:300px;">
+        <center><h1>What happens when cancer spreads?</h1></center>
+        <div>
+            <p>
+                A cancer that has spread from the place where it first formed to another place in the body is called metastatic cancer. The process by which cancer cells spread to other parts of the body is called metastasis.
+                <br>
+                Metastatic cancer has the same name and the same type of cancer cells as the original, or primary, cancer. For example, breast cancer that forms a metastatic tumor in the lung is metastatic breast cancer, not lung cancer.
+                <br>
+                Under a microscope, metastatic cancer cells generally look the same as cells of the original cancer. Moreover, metastatic cancer cells and cells of the original cancer usually have some molecular features in common, such as the presence of specific chromosome changes.
+                <br>
+                In some cases, treatment may help prolong the lives of people with metastatic cancer. In other cases, the primary goal of treatment for metastatic cancer is to control the growth of the cancer or to relieve symptoms it is causing. Metastatic tumors can cause severe damage to how the body functions, and most people who die of cancer die of metastatic disease.  
+                <img src = "metastasis-enlarge.jpg" alt="Spreading of Cancer" width="400" height="300" style="position:absolute; bottom:30px; right:100px;">
+            </p>
+            <p style = "font-size: 25px;">
+                <img src = "communication_info_data_learning_book_information_icon_230354.png" alt="AI" width="60" height="60"> 
+                <strong>
+                    <!-- Use any element to open the sidenav -->
+                    If you want to know more details about cancer: <span onclick="openNav()"><u style = "color:rgb(107, 2, 107);">Click Here</u></span>
+                </strong>            
+            </p>
+        </div>
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+    </body>
+</html>

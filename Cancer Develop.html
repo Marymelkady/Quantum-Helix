@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Helix.html">Home</a>
+            <a href="Cancer.html">Cancer Definition </a>
+            <a href="Cancer Develop.html">Cancer Development</a>
+            <a href="cancer spreads.html">Spreading of Cancer</a>
+            <a href="Types of cancer.html">Cancer Types</a>
+            <a href="Cancer - Copy (4).html">Cancer Types</a>
+        </div>
+        <center><h1>How Does Cancer Develop?</h1></center>
+        <div>
+            <p>
+                Cancer is a genetic disease—that is, it is caused by changes to genes that control the way our cells function, especially how they grow and divide.
+                <br>
+                Genetic changes that cause cancer can happen because:
+                <ul>
+                    <li> of errors that occur as cells divide.</li> 
+                    <li>of damage to DNA caused by harmful substances in the environment, such as the chemicals in tobacco smoke and ultraviolet rays from the sun.</li>
+                    <li>they were inherited from our parents.</li> 
+                </ul><br>
+                The body normally eliminates cells with damaged DNA before they turn cancerous. But the body's ability to do so goes down as we age. This is part of the reason why there is a higher risk of cancer later in life.
+
+                Each person's cancer has a unique combination of genetic changes. As the cancer continues to grow, additional changes will occur. Even within the same tumor, different cells may have different genetic changes.
+            </p>
+            <img src = "gr1.jpg" alt="Cancer development" width="400" height="300" style="position:absolute; right:100px;">
+            <p style = "font-size: 25px;">
+                <img src = "communication_info_data_learning_book_information_icon_230354.png" alt="AI" width="60" height="60"> 
+                <strong>
+                    <!-- Use any element to open the sidenav -->
+                    If you want to know more details about cancer: <span onclick="openNav()"><u style = "color:rgb(107, 2, 107);">Click Here</u></span>
+                </strong>            
+            </p>
+        </div>
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+    </body>
+</html>

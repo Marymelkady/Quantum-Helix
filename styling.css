@@ -1,0 +1,128 @@
+body {
+    background-color: 	#dec6f3 ;
+}
+div {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 22px;
+}
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0;
+left: 0;
+background-color: #111; /* Black*/
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 18px;
+color: white;
+display: block;
+transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 12.5%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tab1 {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Carcinoma {background-color:rgb(128, 0, 70);}
+#Sarcoma {background-color: green;}
+#Leukemia {background-color: blue;}
+#Lymphoma {background-color:rgb(128, 0, 70);}
+#Multiple_Myeloma {background-color:green;}
+#Melanoma {background-color:blue;}
+#Brain_Tumors {background-color:rgb(128, 0, 70);}
+#Other_Types {background-color:green;}
+
+#form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#visualization-container {
+    text-align: center;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 400px;
+    margin: 0 10px;
+}

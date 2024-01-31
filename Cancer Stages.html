@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Helix.html">Home</a>
+            <a href="Cancer.html">Cancer Definition </a>
+            <a href="Cancer Develop.html">Cancer Development</a>
+            <a href="cancer spreads.html">Spreading of Cancer</a>
+            <a href="Types of cancer.html">Cancer Types</a>
+            <a href="Cancer - Copy (4).html">Cancer Stages</a>
+        </div>
+        <div>
+            <body> <center><h1>Filming Stages of Cancer</h1></center>
+                <p>This tool is used to clarify the stages of cancer based on the patient's information such as age and tumor size. It follows a simplified algorithm and is not a substitute for professional medical advice. Please consult your doctor for an accurate assessment.</p>
+                <p>There is a relationship between tumor size, patient age and cancer stage. The smaller the tumor, and the younger the patient, the less serious the stage of the disease. Very small tumours and young patients are often in the first phase of the disease. While large-sized tumors and elderly patients are usually at advanced stages. These factors are used to determine the progress of cancer and choose the most appropriate treatment plan</p>
+                <div id="form-container"> 
+                <label for="age">العمر:</label>
+                <input type="number" id="age" name="age" min="0"> 
+                <label for="tumor-size">حجم الورم:</label>
+                <input type="number" id="tumor-size" name="tumor-size" min="0">
+                <button id="submit-btn">إرسال</button>
+                </div>
+                <div id="visualization-container">
+                    <h2>النتيجة:</h2>
+                    <p id="result"></p>
+                    <div class="chart-container">
+                        <canvas id="chart-1"></canvas>
+                        <canvas id="chart-2"></canvas>
+                    </div>
+                    <canvas id="chart-3"></canvas>
+                </div>
+            </body>
+        </div>
+        <div>    
+            <p style = "font-size: 25px;">
+                <img src = "communication_info_data_learning_book_information_icon_230354.png" alt="AI" width="60" height="60"> 
+                <strong>
+                    <!-- Use any element to open the sidenav -->
+                    If you want to know more details about cancer: <span onclick="openNav()"><u style = "color:rgb(107, 2, 107);">Click Here</u></span>
+                </strong>            
+            </p>
+        </div>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+            
+            document.getElementById('submit-btn').addEventListener('click', function() {
+                // Get form input values
+                var age = parseInt(document.getElementById('age').value);
+                var tumorSize = parseInt(document.getElementById('tumor-size').value);
+        
+                // Perform cancer stage calculation based on input values
+                var stage = calculateCancerStage(age, tumorSize);
+        
+                // Display the result
+                document.getElementById('result').textContent = 'مرحلة السرطان هي ' + stage;
+        
+                // Generate random data for the graphs
+                var labels1 = ['المرحلة 1', 'المرحلة 2', 'المرحلة 3', 'المرحلة 4']; 
+                var data1 = [10, 20, 30, 40];
+                
+                var labels2 = ['ذكر', 'أنثى'];
+                var data2 = [60, 40];
+                
+                var labels3 = ['0-5 سنوات', '6-10 سنوات', '11-15 سنوات', '16-20 سنوات'];
+                var data3 = [15, 25, 35, 25];
+        
+                // Render the graphs using Chart.js
+                renderGraph('chart-1', labels1, data1, 'توزيع مراحل السرطان');
+                renderGraph('chart-2', labels2, data2, 'التوزيع حسب الجنس');
+                renderGraph('chart-3', labels3, data3, 'المدة منذ بداية السرطان');
+            });
+        
+            function calculateCancerStage(age, tumorSize) {
+                // Implement your logic for cancer stage calculation here
+                // This can be a complex algorithm based on medical guidelines
+                // For simplicity, I'll use a basic example
+        
+                if (age < 40 && tumorSize < 2) {
+                    return 'المرحلة 1';
+                } else if (age < 60 && tumorSize < 5) {
+                    return 'المرحلة 2';
+                } else {
+                    return 'المرحلة 3';
+                }
+            }
+        
+            function renderGraph(chartId, labels, data, title) {
+                var ctx = document.getElementById(chartId).getContext('2d');
+        
+                var chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: title,
+                            data: data,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.5)',
+                                'rgba(54, 162, 235, 0.5)',
+                                'rgba(255, 206, 86, 0.5)',
+                                'rgba(75, 192, 192, 0.5)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Helix.html">Home</a>
+            <a href="Cancer.html">Cancer Definition </a>
+            <a href="Cancer Develop.html">Cancer Development</a>
+            <a href="cancer spreads.html">Spreading of Cancer</a>
+            <a href="Types of cancer.html">Cancer Types</a>
+            <a href="Cancer - Copy (4).html">Cancer Types</a>
+        </div>
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+            <br><br><center><h1><strong>Quantum Helix:</strong> DNA Maze Solved</h1></center>
+            <img src = "Quantum Helix Logo.PNG" alt="Logo" width="250" height="150" style="position:absolute; top:20px; left:60px;">
+            <img src = "DNA.png" alt="DNA" width="250" height="150" style="position:absolute; top:20px; right:80px;">
+            <p>
+                This project applies innovative mathematical approaches to detect and treat cancer through gene editing nanobots. It focuses on cancer stem cells, which drive tumour growth. Initially, stem cells are classified as ancestral or special cases using microfluidic chips and AI modelling of samples. Ancestral cells undergo standard DNA extraction for analysis.
+
+                DNA sequencing employs two algorithms - a rapid circular loop method with O(1) time complexity, and a slightly slower O(n) approach. Both aim to minimise fragmentation and accelerate the process. Extensive testing on over 120 samples validated their efficiency at minimising time.
+
+                The core technique then utilises a specialised coding program to analyse sequenced DNA. It determines editing steps by recognizing a unique “UDRL” algorithm within the sequence responsible for cancer mutations. Remarkably, this program is designed to restore corrupted DNA to a normal state by identifying and modifying these mutations.
+
+                Finally, the transformed gene is reintroduced into tumours using gene editing nanobots. As these nanobots have an affinity for cancerous cells based on gene concentrations, they facilitate the change of cancer cells back to a normal phenotype. This holds particular promise for early-stage cancers during proliferation when transformation may be most effective.
+
+                Overall, this project combines mathematical techniques like optimised sequencing algorithms, specialised coding analysis, and targeted nanotherapeutics. It aims to revolutionise cancer detection and treatment through precise identification and correction of cancer-causing genetic errors.
+
+            </p>
+            <p style = "font-size: 24px;">
+                <img src = "8131880.png" alt="AI" width="50" height="50"> 
+                <strong>To try the AI model used for detecting cell type <a href = "https://teachablemachine.withgoogle.com/models/d6iIN2VH8/" target="_blank"><u style = "color:rgb(107, 2, 107);">Click Here</u></a></strong>
+            </p>
+            <p style = "font-size: 25px;">
+                <img src = "communication_info_data_learning_book_information_icon_230354.png" alt="AI" width="60" height="60"> 
+                <strong>
+                    <!-- Use any element to open the sidenav -->
+                    If you want to know more details about cancer: <span onclick="openNav()"><u style = "color:rgb(107, 2, 107);">Click Here</u></span>
+                </strong>            
+            </p>
+        </div>  
+    
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+    </body>
