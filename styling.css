@@ -1,25 +1,25 @@
 body {
-    background-color: #8c67d8; /* Modern purple background color */
-    margin: 20px; /* Add margin to the body */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font family */
+    background-color: #8c67d8;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div {
     text-align: justify;
     text-justify: inter-word;
     font-size: 22px;
-    margin: 20px; /* Add margin to the div */
+    margin: 20px;
 }
 
 /* The side navigation menu */
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 250px; /* Adjusted width to leave space for the menu */
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #4a235a; /* Dark purple for the sidenav background */
+    background-color: #4a235a;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -37,7 +37,7 @@ div {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #ecf0f1; /* Light gray on hover */
+    color: #ecf0f1;
 }
 
 /* Position and style the close button (top right corner) */
@@ -53,7 +53,7 @@ div {
 #main {
     transition: margin-left .5s;
     padding: 20px;
-    margin-left: 250px; /* Adjusted margin-left to accommodate the sidenav */
+    margin-left: 250px;
 }
 
 /* On smaller screens, where height is less than 450px */
@@ -62,13 +62,13 @@ div {
         padding-top: 15px;
     }
     .sidenav a {
-        font-size: 16px; /* Smaller font size for smaller screens */
+        font-size: 16px;
     }
 }
 
 /* Style tab links */
 .tablink {
-    background-color: #673ab7; /* Dark purple for tab links */
+    background-color: #673ab7;
     color: white;
     float: left;
     border: none;
@@ -80,10 +80,10 @@ div {
 }
 
 .tablink:hover {
-    background-color: #512da8; /* Darker purple on hover */
+    background-color: #512da8;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+/* Style the tab content */
 .tabcontent {
     color: white;
     display: none;
@@ -100,35 +100,40 @@ div {
 
 /* Styles for different types */
 #Carcinoma {
-    background-color: #d35400; /* Pumpkin Orange */
+    background-color: #d35400;
 }
 
 #Sarcoma {
-    background-color: #27ae60; /* Nephritis Green */
+    background-color: #27ae60;
 }
 
 #Leukemia {
-    background-color: #3498db; /* Belize Hole Blue */
+    background-color: #3498db;
 }
 
 #Lymphoma {
-    background-color: #9b59b6; /* Amethyst Purple */
+    background-color: #9b59b6;
 }
 
 #Multiple_Myeloma {
-    background-color: #2ecc71; /* Emerald Green */
+    background-color: #2ecc71;
 }
 
 #Melanoma {
-    background-color: #3498db; /* Belize Hole Blue */
+    background-color: #3498db;
 }
 
 #Brain_Tumors {
-    background-color: #9b59b6; /* Amethyst Purple */
+    background-color: #9b59b6;
 }
 
 #Other_Types {
-    background-color: #2ecc71; /* Emerald Green */
+    background-color: #2ecc71;
+}
+
+/* Align paragraphs and images to the right */
+p, img {
+    text-align: right;
 }
 
 #form-container {
@@ -142,7 +147,7 @@ div {
 
 #result {
     font-weight: bold;
-    font-size: 24px; /* Larger font size for a cooler look */
+    font-size: 24px;
 }
 
 .chart-container {
