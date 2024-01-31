@@ -1,7 +1,7 @@
 body {
     background-color: #8c67d8; /* Modern purple background color */
     margin: 20px; /* Add margin to the body */
-    font-family: 'Verdana', sans-serif; /* Use single quotes for font family with spaces */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font family */
 }
 
 div {
@@ -100,35 +100,35 @@ div {
 
 /* Styles for different types */
 #Carcinoma {
-    background-color: #800046; /* Dark purple */
+    background-color: #d35400; /* Pumpkin Orange */
 }
 
 #Sarcoma {
-    background-color: #4caf50; /* Green */
+    background-color: #27ae60; /* Nephritis Green */
 }
 
 #Leukemia {
-    background-color: #2196f3; /* Blue */
+    background-color: #3498db; /* Belize Hole Blue */
 }
 
 #Lymphoma {
-    background-color: #800046; /* Dark purple */
+    background-color: #9b59b6; /* Amethyst Purple */
 }
 
 #Multiple_Myeloma {
-    background-color: #4caf50; /* Green */
+    background-color: #2ecc71; /* Emerald Green */
 }
 
 #Melanoma {
-    background-color: #2196f3; /* Blue */
+    background-color: #3498db; /* Belize Hole Blue */
 }
 
 #Brain_Tumors {
-    background-color: #800046; /* Dark purple */
+    background-color: #9b59b6; /* Amethyst Purple */
 }
 
 #Other_Types {
-    background-color: #4caf50; /* Green */
+    background-color: #2ecc71; /* Emerald Green */
 }
 
 #form-container {
@@ -142,7 +142,7 @@ div {
 
 #result {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px; /* Larger font size for a cooler look */
 }
 
 .chart-container {
