@@ -1,0 +1,157 @@
+body {
+    background-color: #8c67d8; /* Modern purple background color */
+    margin: 20px; /* Add margin to the body */
+    font-family: 'Verdana', sans-serif; /* Use single quotes for font family with spaces */
+}
+
+div {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 22px;
+    margin: 20px; /* Add margin to the div */
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4a235a; /* Dark purple for the sidenav background */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #ecf0f1; /* Light gray on hover */
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 250px; /* Adjusted margin-left to accommodate the sidenav */
+}
+
+/* On smaller screens, where height is less than 450px */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 16px; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #673ab7; /* Dark purple for tab links */
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 12.5%;
+}
+
+.tablink:hover {
+    background-color: #512da8; /* Darker purple on hover */
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tab1 {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/* Styles for different types */
+#Carcinoma {
+    background-color: #800046; /* Dark purple */
+}
+
+#Sarcoma {
+    background-color: #4caf50; /* Green */
+}
+
+#Leukemia {
+    background-color: #2196f3; /* Blue */
+}
+
+#Lymphoma {
+    background-color: #800046; /* Dark purple */
+}
+
+#Multiple_Myeloma {
+    background-color: #4caf50; /* Green */
+}
+
+#Melanoma {
+    background-color: #2196f3; /* Blue */
+}
+
+#Brain_Tumors {
+    background-color: #800046; /* Dark purple */
+}
+
+#Other_Types {
+    background-color: #4caf50; /* Green */
+}
+
+#form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#visualization-container {
+    text-align: center;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 400px;
+    margin: 0 10px;
+}
