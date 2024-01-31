@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #mySidenav {
+            width: 250px;
+            background-color: #f1f1f1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+        
+        #mySidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        #mySidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        #mySidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .sidenav {
+            margin-top: 20px;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Helix.html">Home</a>
+        <a href="Cancer.html">Cancer Definition</a>
+        <a href="Cancer Develop.html">Cancer Development</a>
+        <a href="cancer spreads.html">Spreading of Cancer</a>
+        <a href="Types of cancer.html">Cancer Types</a>
+        <a href="Cancer - Copy (4).html">Cancer Types</a>
+    </div>
+    <img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-6/424640328_353568370801847_5715071386182536169_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHIz62M434g_rGo--QIOxrbHfw9TCpPaVEd_D1MKk9pUTXE1zVZPqh0_7-IwPZr0DzgBfr_WyEdq_mpIe0fNzdV&_nc_ohc=pjcZCAwnm00AX8UB-ca&_nc_ht=scontent.faly8-1.fna&oh=00_AfDMagV_mXQeMGlRXTfPrJssFcr_BCOfa3jjZBIYxwQU0Q&oe=65BEC0FE" alt="cancer" width="120" height="100" style="position: absolute; top: 10px; left: 450px;">
+    <img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-6/424667292_353568347468516_4551369541531450382_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeF_wQl-cNQ7TJ3tsg9Zv4ja-VB9Gx4Tl3P5UH0bHhOXc7F9iSyu9Tcacd0_4dmFtPs_GqG7BYU_e_LdvwuFcWeN&_nc_ohc=J6iKsfSXVMAAX87OeDF&_nc_ht=scontent.faly8-1.fna&oh=00_AfCHfMBSEMLKMXWnxEO_zRH9yWmztfal2G3bHwWSyeqfnA&oe=65BFF803" alt="cancer" width="120" height="100" style="position: absolute; top: 10px; right: 425px;">
+    <br>
+    <h1>What is Cancer?</h1>
+    <div>
+        <p>
+            Cancer is a disease in which some of the body's cells grow uncontrollably and spread to other partsof the body. It is caused by mutations or changes in the DNA within cells, which can disrupt the normal regulation of cell growth and division. These mutations can be inherited from parents or acquired over a person's lifetime due to various factors such as exposure to certain chemicals or radiation, smoking, obesity, or infections.
+
+            Cancer can affect any part of the body and can develop in almost any type of cell. There are over 100 different types of cancer, including breast cancer, lung cancer, prostate cancer, colon cancer, and leukemia, among others. Each type of cancer has its own unique characteristics and may require different treatments.
+
+            The development of cancer typically involves multiple stages. It usually begins with the formation of a small cluster of abnormal cells called a tumor. Over time, these cells can invade nearby tissues and organs and spread to other parts of the body through the bloodstream or lymphatic system. This process is known as metastasis.
+
+            Detecting and diagnosing cancer at an early stage is crucial for successful treatment. Common methods of cancer diagnosis include imaging tests, such as X-rays or CT scans, and laboratory tests, such as biopsies or blood tests. Treatment options for cancer depend on the type and stage of the disease but may include surgery, radiation therapy, chemotherapy, immunotherapy, targeted therapy, or a combination of these approaches.
+
+            It is important to note that significant advancements have been made in cancer research and treatment in recent years, leading to improved survival rates and better quality of life for many cancer patients. Regular screenings, adopting a healthy lifestyle, and avoiding known risk factors can help reduce the risk of developing cancer.
+
+            The information provided here is a general overview of cancer. If you have concerns about cancer or specific symptoms, it is recommended to consult with a healthcare professional for a proper evaluation and diagnosis.
+        </p>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
